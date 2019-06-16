@@ -21,7 +21,7 @@ data:
         args:
         - "--dockerfile=/workspace/Dockerfile"
         # Replace meteatamel with your actual DockerHub
-        - "--destination=registry.cn-hangzhou.aliyuncs.com/knative-sample/alpine-sh:{{.ShortCommitid}}"
+        - "--destination=registry.cn-hangzhou.aliyuncs.com/knative-sample/alpine-sh:3.9-{{.ShortCommitid}}"
         env:
         - name: DOCKER_CONFIG
           value: /builder/home/.docker
