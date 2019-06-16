@@ -51,21 +51,3 @@ spec:
     name: http
     protocol: HTTP
 
---- 
-apiVersion: networking.istio.io/v1alpha3
-kind: ServiceEntry
-metadata:
-  name: rds-entry
-spec: 
-  hosts:
-  - "*.aliyuncs.com"
-  addresses:
-  - "192.168.0.0/16"
-  - "172.16.0.0/12"
-  - "10.0.0.0/8"
-  - 39.96.104.84
-  ports:
-  - number: 3306
-    name: rds
-    protocol: TCP
-
