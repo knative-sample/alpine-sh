@@ -1,4 +1,4 @@
-FROM alpine:3.9.4
+FROM alpine:3.10.3
 
 RUN  \
     echo "https://mirrors.aliyun.com/alpine/v3.9/main/" > /etc/apk/repositories && \ 
